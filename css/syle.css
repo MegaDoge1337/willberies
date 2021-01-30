@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -27,6 +28,12 @@ body {
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.5px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom .2s linear;
+}
+
+.navigation-link:hover {
+  border-color: #939699;
 }
 
 .button {
@@ -43,6 +50,12 @@ body {
   display: flex;
   align-items: center;
   cursor: pointer;
+  box-shadow: 0 0 10px transparent;
+  transition: box-shadow .2s linear;
+}
+
+.button:hover {
+  box-shadow: 0 0 4px rgba(54, 54, 54, 0.5)
 }
 
 .button-icon,
@@ -67,6 +80,10 @@ body {
 
 .slide-2 {
   background: #b9e0b4 url('../img/silide-img-1.png') no-repeat top right 30%;
+}
+
+.slide-3 {
+  background: #e0b4b4 url('../img/silide-img-1.png') no-repeat top right 30%;
 }
 
 .label {
@@ -105,6 +122,7 @@ body {
   transform: translateY(-50%);
   z-index: 9;
 }
+
 .slider-button {
   background-color: transparent;
   border: none;
@@ -202,6 +220,12 @@ body {
   line-height: 20px;
   color: #262D33;
   padding: 10px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom .2s linear;
+}
+
+.more:hover {
+  border-color: #262D33;
 }
 
 .goods-card {
@@ -211,6 +235,16 @@ body {
   padding-bottom: 35px;
   padding-left: 35px;
   padding-right: 35px;
+  cursor: pointer;
+
+  border: 3px solid transparent;
+  box-shadow: 0 0 10px transparent;
+  transition: border-color .2s linear, box-shadow .2s linear;
+}
+
+.goods-card:hover {
+  border-color: rgb(240, 240, 240);
+  box-shadow: 0 0 4px rgb(240, 240, 240);
 }
 
 .goods-card .label {
@@ -221,8 +255,8 @@ body {
 
 .goods-title {
   font-family: 'Roboto Slab', serif;
-  margin-top: 15px;
-  margin-bottom: 5px;
+  padding-top: 15px;
+  padding-bottom: 5px;
   color: #262D33;
   font-weight: 700;
   font-size: 16px;
@@ -267,6 +301,12 @@ body {
   font-weight: 900;
   font-size: 14px;
   line-height: 20px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom .2s linear;
+}
+
+.footer-menu-link:hover {
+    border-color: #fff;
 }
 
 .footer-text {
@@ -283,6 +323,12 @@ body {
 .social-link {
   text-decoration: none;
   margin-left: 15px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom .2s linear;
+}
+
+.social-link:hover {
+    border-color: #fff;
 }
 
 .top-link {
